@@ -1,12 +1,6 @@
 module.exports = function (context, req) {
-    let error = null;
+    let message = (typeof req.body != 'undefined' && typeof req.body == 'object') ? req.body : null;
+    let error = message == null ? "no data; or invald payload in body" : null;
 
-    if (typeof req.body != 'undefined' && typeof req.body == 'object') {
-        context.bindings.out = JSON.stringify(req.body);
-    }
-    else {
-        error = "no data; or invald payload in body";
-    }
-
-    context.done(error);
+    context.done(error, message);
 };
