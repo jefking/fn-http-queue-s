@@ -10,10 +10,15 @@
             ]
         },
         {
-            "queueName": "inbound",
-            "name": "out",
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        },
+        {
             "type": "queueTrigger",
             "direction": "out",
+            "name": "out",
+            "queueName": "posted",
             "connection": "Storage",
             "accessRights": "Manage"
         }
