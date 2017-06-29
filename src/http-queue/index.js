@@ -4,10 +4,6 @@ module.exports = function (context, req) {
 
     let error = !context.model ? "no data; or invalid payload in body" : null;
 
-    context.log(req.body);
-    context.log('-------------------');
-    context.log(context.model);
-
     context.res = {
         status: error ? 500 : 200,
         body: error

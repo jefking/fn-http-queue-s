@@ -15,7 +15,7 @@
             "name": "res"
         },
         {
-            "type": "queueTrigger",
+            "type": "queue",
             "direction": "out",
             "name": "model",
             "queueName": "posted",
