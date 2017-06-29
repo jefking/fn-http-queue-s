@@ -10,11 +10,11 @@
             ]
         },
         {
-            "queueName": "tostore",
+            "queueName": "inbound",
             "name": "out",
-            "type": "serviceBusTrigger",
+            "type": "queueTrigger",
             "direction": "out",
-            "connection": "AzureWebJobsServiceBus",
+            "connection": "StorageConnectionString",
             "accessRights": "Manage"
         }
     ],

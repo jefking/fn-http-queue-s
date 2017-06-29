@@ -57,6 +57,10 @@
                         {
                             "name": "ROUTING_EXTENSION_VERSION",
                             "value": "~0.1"
+                        },
+                        {
+                            "name": "StorageConnectionString",
+                            "value": "PLEASE SET ME"
                         }
                     ]
                 },
