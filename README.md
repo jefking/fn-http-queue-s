@@ -1,13 +1,11 @@
 # Azure Function: HTTP (API) -> Azure Storage Queue
 
+Sets up an HTTP POST API; the message body will then be added to an Azure Storage Queue for downstream processing.
 
 ## Quick Deploy to Azure
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
 
-## Configuration
-
-
 ## Application settings
 
-- **Storage** - Storage account from which to stream resources from.
+- **Storage** - Azure Storage Account Connection String for the Queue.
