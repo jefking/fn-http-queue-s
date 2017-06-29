@@ -14,7 +14,7 @@
             "name": "out",
             "type": "queueTrigger",
             "direction": "out",
-            "connection": "StorageConnectionString",
+            "connection": "Storage",
             "accessRights": "Manage"
         }
     ],
