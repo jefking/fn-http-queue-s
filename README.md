@@ -9,3 +9,7 @@ Sets up an HTTP POST API; the message body will then be added to an Azure Storag
 ## Application settings
 
 - **Storage** - Azure Storage Account Connection String for the Queue.
+
+## Configuration
+
+**Create Queue** - Create Queue 'posted' under the Azure Storage Account that was created.
