@@ -17,7 +17,7 @@
         {
             "type": "queueTrigger",
             "direction": "out",
-            "name": "out",
+            "name": "model",
             "queueName": "posted",
             "connection": "Storage",
             "accessRights": "Manage"

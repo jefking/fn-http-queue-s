@@ -1,5 +1,7 @@
 module.exports = function (context, req) {
-    let message = (typeof req.body != 'undefined' && typeof req.body == 'object') ? req.body : null;
+    
+    context.model = (typeof req.body != 'undefined' && typeof req.body == 'object') ? req.body : null;
+
     let error = !message ? "no data; or invald payload in body" : null;
 
     context.res = {
@@ -7,5 +9,5 @@ module.exports = function (context, req) {
         body: error
     };
 
-    context.done(error, message);
+    context.done(error, context.model);
 };
